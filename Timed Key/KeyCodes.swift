@@ -1,0 +1,61 @@
+import Foundation
+
+struct KeyOption: Identifiable, Hashable {
+    let id = UUID()
+    let name: String
+    let code: Int
+}
+
+// macOS virtual key codes (same numbers AppleScript's "key code N" expects)
+let commonKeys: [KeyOption] = [
+    KeyOption(name: "Return", code: 36),
+    KeyOption(name: "Tab", code: 48),
+    KeyOption(name: "Space", code: 49),
+    KeyOption(name: "Delete", code: 51),
+    KeyOption(name: "Escape", code: 53),
+    KeyOption(name: "Left Arrow", code: 123),
+    KeyOption(name: "Right Arrow", code: 124),
+    KeyOption(name: "Down Arrow", code: 125),
+    KeyOption(name: "Up Arrow", code: 126),
+    KeyOption(name: "A", code: 0),
+    KeyOption(name: "B", code: 11),
+    KeyOption(name: "C", code: 8),
+    KeyOption(name: "D", code: 2),
+    KeyOption(name: "E", code: 14),
+    KeyOption(name: "F", code: 3),
+    KeyOption(name: "G", code: 5),
+    KeyOption(name: "H", code: 4),
+    KeyOption(name: "I", code: 34),
+    KeyOption(name: "J", code: 38),
+    KeyOption(name: "K", code: 40),
+    KeyOption(name: "L", code: 37),
+    KeyOption(name: "M", code: 46),
+    KeyOption(name: "N", code: 45),
+    KeyOption(name: "O", code: 31),
+    KeyOption(name: "P", code: 35),
+    KeyOption(name: "Q", code: 12),
+    KeyOption(name: "R", code: 15),
+    KeyOption(name: "S", code: 1),
+    KeyOption(name: "T", code: 17),
+    KeyOption(name: "U", code: 32),
+    KeyOption(name: "V", code: 9),
+    KeyOption(name: "W", code: 13),
+    KeyOption(name: "X", code: 7),
+    KeyOption(name: "Y", code: 16),
+    KeyOption(name: "Z", code: 6),
+    KeyOption(name: "0", code: 29),
+    KeyOption(name: "1", code: 18),
+    KeyOption(name: "2", code: 19),
+    KeyOption(name: "3", code: 20),
+    KeyOption(name: "4", code: 21),
+    KeyOption(name: "5", code: 23),
+    KeyOption(name: "6", code: 22),
+    KeyOption(name: "7", code: 26),
+    KeyOption(name: "8", code: 28),
+    KeyOption(name: "9", code: 25),
+    KeyOption(name: "F1", code: 122),
+    KeyOption(name: "F2", code: 120),
+    KeyOption(name: "F3", code: 99),
+    KeyOption(name: "F4", code: 118),
+    KeyOption(name: "F5", code: 96),
+]
